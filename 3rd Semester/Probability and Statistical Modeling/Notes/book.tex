@@ -101,7 +101,7 @@ $P(E) = \frac{\text{number of favourable outcomes}}{\text{total number of outcom
     \subitem If A and B are two events, then the probability of P(A and B), i.e, probability that A and B occur can be calculated as below:
     \subitem Probabilities under conditions of statistical independence
     \begin{align*}
-      P(A \cap B) = P(A) \dot P(B)
+      P(A \cap B) = P(A) \times P(B)
     \end{align*}
     \subitem Probabilities under conditions of statistical dependence
     \begin{align*}
@@ -147,8 +147,103 @@ It augments the fundamental principle of counting by exhibiting all possible out
     \subitem\ding{227} It is a formula which can be thought of as 'reversing' conditional probability. That is, it finds a conditional probability (A|B) given, among other things, its inverse (B|A).
     \subitem\ding{227} If A and B are two events of an experiment, then
     \begin{align*}
-      P(A|B) = \frac{P(A) \dot P(B|A)}{P(B)}
+      P(A|B) = \frac{P(A) \times P(B|A)}{P(B)}
     \end{align*}
 \end{itemize}
 
+\section{Examples}
+\subsection*{Example 1.1}
+A group of 20 university students contain eight who are in the first year of study. A student is picked at random. Find the probability that the student is not in the first year of study. \\[20pt]
+Given, \\
+$n(S) = 20$ \\
+$n(E) = 20 - 8 = 12$ \\
+Now, \\
+$P(E) = \frac{n(E)}{n(S)} = \frac{12}{20} = \frac{3}{5}$
+
+\subsection*{Example 1.2}
+If a card is drawn from a deck of playing cards, what is the probability of getting a red or an ace? \\[20pt]
+Sample Space, $n(S) = 52$ \\
+No. of red cards, $n(\text{Red}) = 26$ \\
+No. of ace, $n(\text{Ace}) = 4$ \\
+No. of red aces, $n(\text{Red and Ace}) = 2$ \\
+Now, \\
+\begin{align*}
+  P (\text{Red or Ace}) & = P(\text{Red}) + P(\text{Ace}) - P(\text{Red and Ace}) \\
+  & = \frac{26}{52} + \frac{4}{52} - \frac{2}{52} \\
+  & = \frac{28}{52} \\
+  & = \frac{7}{13}
+\end{align*}
+
+\subsection*{Example 1.3}
+In a class of 20 children, 4 of the boys and 3 of the eleven girls are in the athletics team. A child from the class is chosen at random. Find the probability that the child chosen is \\
+(a) in the athletics team \\
+(b) a girl \\
+(c) a girl member of the athletics team \\
+(d) a girl member or in the athletics team \\[20pt]
+Given, \\
+\indent Total number of children, $n(S) = 20$ \\
+\indent Number of boys, $n(B) = 4$ \\
+\indent Number of girls, $n(G) = 3$ \\[20pt]
+(a) \\
+\indent Probability that the children is in the athletics team, \\
+\indent $n(A) = n(B) + n(G) = 4 + 3 = 7$ \\
+\indent $P(A) = \frac{n(E)}{n(S)} = \frac{7}{20}$ \\[20pt]
+(b) \\
+\indent Probability that the children is a girl, \\
+\indent $P(G) = \frac{n(E)}{n(S)} = \frac{11}{20}$ \\[20pt]
+(c) \\
+\indent Probability that the children is a girl member of the athletics team, \\
+\indent $P(G \cap A) = \frac{3}{20}$ \\[20pt]
+(d) \\
+\indent Probability that the children is a girl member or in the athletics team, \\
+\indent $P(G \cup A) = P(A) + P(G) - P(G \cap A)$ \\[5pt]
+\indent $P(G \cup A) = \frac{7}{20} + \frac{11}{20} - \frac{3}{20}$ \\[5pt]
+\indent $P(G \cup A) = \frac{15}{20} = \frac{3}{4}$
+
+\subsection*{Example 1.4}
+In a race in which there are no dead heats, the probability that John wins is 0.3, the probability that Paul wins is 0.2 and the probabiity that Mark wins is 0.4. Find the probability that \\
+(a) John or Mark wins \\
+(b) John or Paul or Mark wins \\
+(c) someone else wins \\[20pt]
+Given, \\
+\indent Probability that John wins, P(J) = 0.3 \\
+\indent Probability that Paul wins, P(P) = 0.2 \\
+\indent Probability that Mark wins, P(M) = 0.4 \\[20pt]
+(a) \\
+\indent Probability that John or Mark wins, \\
+\indent $P(J \cup M) = P(J) + P(M)$ \\
+\indent $P(J \cup M) = 0.3 + 0.4$ \\
+\indent $(J \cup M) = 0.7$ \\[20pt]
+(b) \\
+\indent Probability that John or Paul or Mark wins, \\
+\indent $P(J \cup P \cup M) = P(J) + P(P) + P(M)$ \\
+\indent $P(J \cup P \cup M) = 0.3 + 0.2 + 0.4$ \\
+\indent $P(J \cup P \cup M) = 0.9$ \\[20pt]
+(c) \\
+\indent Probability that someone else wins, \\
+\indent $P(E) = 1 - P(J \cup P \cup M)$ \\
+\indent $P(E) = 1 - 0.9$ \\
+\indent $P(E) = 0.1$
+
+\subsection*{Example 1.5}
+A card is drawn from a bag containing 5 red cards numbered 1 to 5 and 3 green cards numbered 1 to 3. Find the probability that the card is \\
+(a) a green card or a red card \\
+(b) a green card or an even number \\[20pt]
+Given, \\
+\indent Total number of cards, $n(S) = 8$ \\
+\indent No. of red cards, $n(R) = 5$ \\
+\indent No. of green cards, $n(G) = 3$ \\
+\indent Even numbered cards, $n(E) = 3$ \\[20pt]
+(a) \\
+\indent Probability that the card is green or red, \\
+\indent $P(G \cup R) = P(G) + P(R)$ \\
+\indent $P(G \cup R) = \frac{n(G)}{n(S)} + \frac{n(R)}{n(S)}$ \\
+\indent $P(G \cup R) = \frac{3}{8} + \frac{5}{8}$ \\
+\indent $P(G \cup R) = 1$ \\[20pt]
+(b) \\
+\indent Probability that the card is green or an even number, \\
+\indent $P(G \cup E) = P(G) + P(E)$ \\
+\indent $P(G \cup E) = \frac{n(E)}{n(S)} + \frac{n(E)}{n(S)}$ \\[5pt]
+\indent $P(G \cup E) = \frac{3}{8} + \frac{3}{8}$ \\[5pt]
+\indent $P(G \cup E) = \frac{3}{4}$
 \end{document}
