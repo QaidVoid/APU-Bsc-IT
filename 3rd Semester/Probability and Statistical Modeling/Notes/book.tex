@@ -1,0 +1,154 @@
+\documentclass[12pt]{report}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{pifont}
+\usepackage{fontspec}
+\setmainfont{Times New Roman}
+
+\title{Probability and Statistical Modeling}
+\date{}
+\author{QaidVoid}
+
+% Preamble
+\begin{document}
+
+\maketitle
+
+\chapter{Concept of Probability}
+
+\section{Introduction}
+Probability is the likelihood or chance of something happening. \\
+In an experiment in which all outcomes are equally likely, the probability of an event E is,
+
+$P(E) = \frac{\text{number of favourable outcomes}}{\text{total number of outcomes}} = \frac{n(E)}{n(S)}$
+
+\begin{itemize}
+  \item[\ding{226}] $0 \le P(E) \le 1$
+  \item[\ding{226}] $P(E) = 0$ is an impossible event
+  \item[\ding{226}] $P(E) = 1$ is a certain event
+  \item[\ding{226}] Sum of all probabilities of an experiment must total 1
+  \item[\ding{226}] P(E does not occur) = 1 - P(E) (Complementary Probability)
+\end{itemize}
+
+\section{Terminologies}
+\begin{itemize}
+  \item[\ding{226}] Statistical event
+    \subitem It is defined as any subset of the given outcome set that is of interest
+  \item[\ding{226}] Statistical experiment
+    \subitem It is described as any situation, specially set up or occuring naturally, which can be performed, enacted or otherwise considered in order to gain useful information
+  \item[\ding{226}] Sample Space
+    \subitem Sample space is the collection of all possible outcomes \\
+    Examples: 6 faces of a die, 52 cards of a bridge deck
+  \item[\ding{226}] Complement Rule
+    \subitem The complement of an event E is the collection of all possible elementary events not contained in event E. The complement of event E is represented by $\overline{E}$.
+    \begin{align*}
+      P(\overline{E}) & = 1 - P(E) \\
+      or, P(E) + P(\overline{E}) & = 1
+    \end{align*}
+\end{itemize}
+
+\section{Events}
+\begin{itemize}
+  \item[\ding{226}] Combined Events
+    \subitem $P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+  \item[\ding{226}] Mutually Exclusive Events
+    \subitem Two events of the same experiment are said to be mutually exclusive if their respective events do not overlap.
+    \subitem\ding{169} If $E_{1}$ occurs, then $E_{2}$ cannot occur
+    \subitem\ding{169} If $E_{1}$ and $E_{2}$ have no common elements
+  \item[\ding{226}] Not mulually exclusive
+    \subitem If two or more events occur at one time.
+  \item[\ding{226}] Independent events
+    \subitem Two events are said to be independent if the occurance (or not) of one of the events will in no way affect the occurence (or not) of other.
+    \subitem Alternatively, two events that are definde on two physically different experiments are said to be independent.
+
+    \begin{align*}
+      E_{1} & = \text{heads on one flip of fair coin} \\
+      E_{2} & = \text{heads on second flip of same coin}
+    \end{align*}
+    Result of second flip does not depend on the result of the first flip.
+  \item[\ding{226}] Dependent events
+    \begin{align*}
+      E_{1} & = \text{rain forecasted on the news} \\
+      E_{2} & = \text{take umbrella to work}
+    \end{align*}
+    Probability of the second event is affected by the occurence of the first event.
+  \item[\ding{226}] Conditional event
+    \subitem One of the outcomes of which is influenced by the outcomes of another event.
+    \subitem If A and B are two events not necessarily from the same experiment, then the conditional probability that A occurs, given that B has already occured, is written,
+    \begin{align*}
+      P(\text{A, given B}) & = P(A \mid B) = \frac{P(\text{A and B})}{P(B)} \\
+      P(\text{B, given A}) & = P(B \mid A) = \frac{P(\text{A and B})}{P(A)}
+    \end{align*}
+\end{itemize}
+
+\section{Rules of Probability}
+\begin{itemize}
+  \item[\ding{226}] Addition Rule
+    \subitem If A and B are not mutually exclusive events, then
+    \begin{align*}
+      P(A \cup B) & = P(A) + P(A) - P(A \cap B) \\
+      P(A \cup B \cup C) & = P(A) + P(B) + P(C) - P(A \cap B) \\ & - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)
+    \end{align*}
+    \subitem If A and B are mutually exclusive events, then
+    \begin{align*}
+      P(A \cup B) & = P(A) + P(B) \\
+      P(A \cup B \cup C) & = P(A) + P(B) + P(C)
+    \end{align*}
+  \item[\ding{226}] Multiplication Rule
+    \subitem If A and B are two events, then the probability of P(A and B), i.e, probability that A and B occur can be calculated as below:
+    \subitem Probabilities under conditions of statistical independence
+    \begin{align*}
+      P(A \cap B) = P(A) \dot P(B)
+    \end{align*}
+    \subitem Probabilities under conditions of statistical dependence
+    \begin{align*}
+      P(A \cap B) = P(A) \times P(B \setminus A)
+    \end{align*}
+    \subitem Probability of event B given that A has occured
+    \begin{center}
+      $P(B \mid A) = \frac{P(\text{A and B})}{P(A)}$
+    \end{center}
+\end{itemize}
+
+\section{Tree Diagram}
+It augments the fundamental principle of counting by exhibiting all possible outcomes of a sequence of events where each event can occur in a finite number of ways.
+
+\section{Contingency Tables}
+\begin{itemize}
+  \item[\ding{226}] A table used to classify sample observations according to two or more identifiable characteristics
+  \item[\ding{226}] It is a cross tabulation that simultaneously summarizes two variables of interest and their relationship
+  \item[\ding{226}] Example:
+    \subitem A survey of 150 adults classified each as to gender and the number of movies attended last month. Each respondent is classified according to two criteria - the number of movies attended and gender.
+    \begin{center}
+      \begin{tabular}{|c|c|c|c|}
+        \hline
+        \multicolumn{4}{|c|}{Gender} \\
+        \hline
+        Movies Attended & Men & Women & Total \\
+        \hline
+        0 & 20 & 40 & 60 \\
+        \hline
+        1 & 40 & 30 & 70 \\
+        \hline
+        2 or more & 10 & 10 & 20 \\
+        \hline
+        Total & 70 & 80 & 150 \\
+        \hline
+      \end{tabular}
+    \end{center}
+\end{itemize}
+
+\section{Posterior Probability}
+\begin{itemize}
+  \item[\ding{226}] Bayes Theorem
+    \subitem\ding{227} It is a formula which can be thought of as 'reversing' conditional probability. That is, it finds a conditional probability (A|B) given, among other things, its inverse (B|A).
+    \subitem\ding{227} If A and B are two events of an experiment, then
+    \begin{align*}
+      P(A|B) = \frac{P(A) \dot P(B|A)}{P(B)}
+    \end{align*}
+\end{itemize}
+
+\end{document}
