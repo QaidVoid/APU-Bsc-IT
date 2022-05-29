@@ -23,7 +23,7 @@
 Probability is the likelihood or chance of something happening. \\
 In an experiment in which all outcomes are equally likely, the probability of an event E is,
 
-$P(E) = \frac{\text{number of favourable outcomes}}{\text{total number of outcomes}} = \frac{n(E)}{n(S)}$
+$P(E) = \dfrac{\text{number of favourable outcomes}}{\text{total number of outcomes}} = \dfrac{n(E)}{n(S)}$
 
 \begin{itemize}
   \item[\ding{226}] $0 \le P(E) \le 1$
@@ -58,11 +58,11 @@ $P(E) = \frac{\text{number of favourable outcomes}}{\text{total number of outcom
     \subitem Two events of the same experiment are said to be mutually exclusive if their respective events do not overlap.
     \subitem\ding{169} If $E_{1}$ occurs, then $E_{2}$ cannot occur
     \subitem\ding{169} If $E_{1}$ and $E_{2}$ have no common elements
-  \item[\ding{226}] Not mulually exclusive
+  \item[\ding{226}] Not mutually exclusive
     \subitem If two or more events occur at one time.
   \item[\ding{226}] Independent events
     \subitem Two events are said to be independent if the occurance (or not) of one of the events will in no way affect the occurence (or not) of other.
-    \subitem Alternatively, two events that are definde on two physically different experiments are said to be independent.
+    \subitem Alternatively, two events that are defined on two physically different experiments are said to be independent.
 
     \begin{align*}
       E_{1} & = \text{heads on one flip of fair coin} \\
@@ -79,8 +79,8 @@ $P(E) = \frac{\text{number of favourable outcomes}}{\text{total number of outcom
     \subitem One of the outcomes of which is influenced by the outcomes of another event.
     \subitem If A and B are two events not necessarily from the same experiment, then the conditional probability that A occurs, given that B has already occured, is written,
     \begin{align*}
-      P(\text{A, given B}) & = P(A \mid B) = \frac{P(\text{A and B})}{P(B)} \\
-      P(\text{B, given A}) & = P(B \mid A) = \frac{P(\text{A and B})}{P(A)}
+      P(\text{A, given B}) & = P(A \mid B) = \dfrac{P(\text{A and B})}{P(B)} \\
+      P(\text{B, given A}) & = P(B \mid A) = \dfrac{P(\text{A and B})}{P(A)}
     \end{align*}
 \end{itemize}
 
@@ -89,7 +89,7 @@ $P(E) = \frac{\text{number of favourable outcomes}}{\text{total number of outcom
   \item[\ding{226}] Addition Rule
     \subitem If A and B are not mutually exclusive events, then
     \begin{align*}
-      P(A \cup B) & = P(A) + P(A) - P(A \cap B) \\
+      P(A \cup B) & = P(A) + P(B) - P(A \cap B) \\
       P(A \cup B \cup C) & = P(A) + P(B) + P(C) - P(A \cap B) \\ & - P(A \cap C) - P(B \cap C) + P(A \cap B \cap C)
     \end{align*}
     \subitem If A and B are mutually exclusive events, then
@@ -99,17 +99,17 @@ $P(E) = \frac{\text{number of favourable outcomes}}{\text{total number of outcom
     \end{align*}
   \item[\ding{226}] Multiplication Rule
     \subitem If A and B are two events, then the probability of P(A and B), i.e, probability that A and B occur can be calculated as below:
-    \subitem Probabilities under conditions of statistical independence
+    \subitem Independent events
     \begin{align*}
       P(A \cap B) = P(A) \times P(B)
     \end{align*}
-    \subitem Probabilities under conditions of statistical dependence
+    \subitem Dependent events
     \begin{align*}
       P(A \cap B) = P(A) \times P(B \setminus A)
     \end{align*}
     \subitem Probability of event B given that A has occured
     \begin{center}
-      $P(B \mid A) = \frac{P(\text{A and B})}{P(A)}$
+      $P(B \mid A) = \dfrac{P(\text{A and B})}{P(A)}$
     \end{center}
 \end{itemize}
 
@@ -147,7 +147,7 @@ It augments the fundamental principle of counting by exhibiting all possible out
     \subitem\ding{227} It is a formula which can be thought of as 'reversing' conditional probability. That is, it finds a conditional probability (A|B) given, among other things, its inverse (B|A).
     \subitem\ding{227} If A and B are two events of an experiment, then
     \begin{align*}
-      P(A|B) = \frac{P(A) \times P(B|A)}{P(B)}
+      P(A|B) = \dfrac{P(A) \times P(B|A)}{P(B)}
     \end{align*}
 \end{itemize}
 
@@ -158,7 +158,7 @@ Given, \\
 $n(S) = 20$ \\
 $n(E) = 20 - 8 = 12$ \\
 Now, \\
-$P(E) = \frac{n(E)}{n(S)} = \frac{12}{20} = \frac{3}{5}$
+$P(E) = \dfrac{n(E)}{n(S)} = \dfrac{12}{20} = \dfrac{3}{5}$
 
 \subsection*{Example 1.2}
 If a card is drawn from a deck of playing cards, what is the probability of getting a red or an ace? \\[20pt]
@@ -169,9 +169,9 @@ No. of red aces, $n(\text{Red and Ace}) = 2$ \\
 Now, \\
 \begin{align*}
   P (\text{Red or Ace}) & = P(\text{Red}) + P(\text{Ace}) - P(\text{Red and Ace}) \\
-  & = \frac{26}{52} + \frac{4}{52} - \frac{2}{52} \\
-  & = \frac{28}{52} \\
-  & = \frac{7}{13}
+  & = \dfrac{26}{52} + \dfrac{4}{52} - \dfrac{2}{52} \\
+  & = \dfrac{28}{52} \\
+  & = \dfrac{7}{13}
 \end{align*}
 
 \subsection*{Example 1.3}
@@ -187,18 +187,18 @@ Given, \\
 (a) \\
 \indent Probability that the children is in the athletics team, \\
 \indent $n(A) = n(B) + n(G) = 4 + 3 = 7$ \\
-\indent $P(A) = \frac{n(E)}{n(S)} = \frac{7}{20}$ \\[20pt]
+\indent $P(A) = \dfrac{n(E)}{n(S)} = \dfrac{7}{20}$ \\[20pt]
 (b) \\
 \indent Probability that the children is a girl, \\
-\indent $P(G) = \frac{n(E)}{n(S)} = \frac{11}{20}$ \\[20pt]
+\indent $P(G) = \dfrac{n(E)}{n(S)} = \dfrac{11}{20}$ \\[20pt]
 (c) \\
 \indent Probability that the children is a girl member of the athletics team, \\
-\indent $P(G \cap A) = \frac{3}{20}$ \\[20pt]
+\indent $P(G \cap A) = \dfrac{3}{20}$ \\[20pt]
 (d) \\
 \indent Probability that the children is a girl member or in the athletics team, \\
 \indent $P(G \cup A) = P(A) + P(G) - P(G \cap A)$ \\[5pt]
-\indent $P(G \cup A) = \frac{7}{20} + \frac{11}{20} - \frac{3}{20}$ \\[5pt]
-\indent $P(G \cup A) = \frac{15}{20} = \frac{3}{4}$
+\indent $P(G \cup A) = \dfrac{7}{20} + \dfrac{11}{20} - \dfrac{3}{20}$ \\[5pt]
+\indent $P(G \cup A) = \dfrac{15}{20} = \dfrac{3}{4}$
 
 \subsection*{Example 1.4}
 In a race in which there are no dead heats, the probability that John wins is 0.3, the probability that Paul wins is 0.2 and the probabiity that Mark wins is 0.4. Find the probability that \\
@@ -237,13 +237,70 @@ Given, \\
 (a) \\
 \indent Probability that the card is green or red, \\
 \indent $P(G \cup R) = P(G) + P(R)$ \\
-\indent $P(G \cup R) = \frac{n(G)}{n(S)} + \frac{n(R)}{n(S)}$ \\
-\indent $P(G \cup R) = \frac{3}{8} + \frac{5}{8}$ \\
+\indent $P(G \cup R) = \dfrac{n(G)}{n(S)} + \dfrac{n(R)}{n(S)}$ \\
+\indent $P(G \cup R) = \dfrac{3}{8} + \dfrac{5}{8}$ \\
 \indent $P(G \cup R) = 1$ \\[20pt]
 (b) \\
 \indent Probability that the card is green or an even number, \\
 \indent $P(G \cup E) = P(G) + P(E)$ \\
-\indent $P(G \cup E) = \frac{n(E)}{n(S)} + \frac{n(E)}{n(S)}$ \\[5pt]
-\indent $P(G \cup E) = \frac{3}{8} + \frac{3}{8}$ \\[5pt]
-\indent $P(G \cup E) = \frac{3}{4}$
+\indent $P(G \cup E) = \dfrac{n(E)}{n(S)} + \dfrac{n(E)}{n(S)}$ \\[5pt]
+\indent $P(G \cup E) = \dfrac{3}{8} + \dfrac{3}{8}$ \\[5pt]
+\indent $P(G \cup E) = \dfrac{3}{4}$
+
+\subsection*{Example 1.6}
+When a die was thrown, the score was an odd number. What is the probability that it was a prime number? \\[20pt]
+Number of sample space, n(S) = 6 \\
+Number of odd numbers, n(O) = 3 \\
+Number of prime numbers, n(P) = 4 \\[20pt]
+Now, \\
+\indent Probability that the number was prime, \\
+\indent $P(P | O) = \dfrac{P(P \cap O)}{P(O)}$ \\[10pt]
+\indent $P(P | O) = \dfrac{P(P) \times P(O)}{P(O)}$ \\[10pt]
+\indent $P(P | O) = \dfrac{\dfrac{4}{6} \times \dfrac{3}{6}}{\dfrac{3}{6}}$ \\[10pt]
+\indent $P(P | O) = \dfrac{2}{3}$
+
+\subsection*{Example 1.7}
+In a certain college, \\
+\indent 65\% of the students are full time students \\
+\indent 55\% of the students are female \\
+\indent 35\% of the students are male full time students \\
+Find the probability that a students chosen at random \\
+a) from all the students in the college is a part time student \\
+b) from all the students in the college is female and a part time student \\
+c) from all the female students in the college is a part time student \\[20pt]
+\begin{tabular}{|c|c|c|c|}
+  \hline
+  \multicolumn{4}{|c|}{Gender} \\
+  \hline
+  Type & Male & Female & Total \\
+  \hline
+  Full-time & 35 & 30 & 65 \\
+  \hline
+  Part-time & 10 & 25 & 35 \\
+  \hline
+  Total & 45 & 55 & 100 \\
+  \hline
+\end{tabular} \\[20pt]
+n(S) = 100 \\
+n(M) = 45 \\
+n(F) = 55 \\
+n(Fp) = 25 \\
+a) Probability that the student is a part time student, \\
+\begin{flalign*}
+  \indent P(\text{Part-time}) & = \dfrac{n(\text{Part-time})}{n(S)} &\\
+  & = \dfrac{35}{100} &\\
+  & = \dfrac{7}{20}
+\end{flalign*}
+b) Probability that the student is female and a part time student, \\
+\begin{flalign*}
+  \indent P(Fp) & = \dfrac{n(Fp)}{n(S)} &\\
+  & = \dfrac{25}{100} &\\
+  & = \dfrac{1}{4}
+\end{flalign*}
+c) Probability that the student is part time from female students, \\
+\begin{flalign*}
+  \indent P(\text{Part-time}) & = \dfrac{n(Fp)}{n(F)} &\\
+  & = \dfrac{25}{55} &\\
+  & = \dfrac{5}{11}
+\end{flalign*}
 \end{document}
