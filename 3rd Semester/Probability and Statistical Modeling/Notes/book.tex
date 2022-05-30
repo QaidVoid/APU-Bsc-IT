@@ -303,4 +303,106 @@ c) Probability that the student is part time from female students, \\
   & = \dfrac{25}{55} &\\
   & = \dfrac{5}{11}
 \end{flalign*}
+
+\subsection*{Example 1.8}
+(a) A fair die is thrown twice. Find the probability that two fives are thrown. \\[20pt]
+$n(S) = 6$ \\
+Probability of getting two fives,
+\begin{flalign*}
+  P(5 \cap 5) & = P(5) \times P(5) &\\
+  & = \frac{n(5)}{n(S)} \times \frac{n(5)}{n(S)} &\\
+  & = \frac{1}{6} \times \frac{1}{6} &\\
+  & = \frac{1}{36}
+\end{flalign*}
+(b) Events A \& B are independent and $P(A) = 0.3$, $P(A \cap B) = 0.12$. Find $P(B)$ and $P(A \cup B)$.
+\begin{flalign*}
+  P(A \cap B) & = P(A) \times P(B) &\\
+  P(B) & = \frac{P(A \cap B)}{P(A)} &\\
+  & = \frac{0.12}{0.3} &\\
+  & = 0.4
+\end{flalign*}
+\begin{flalign*}
+  P(A \cup B) & = P(A) + P(B) - P(A \cap B) &\\
+  & = 0.3 + 0.4 - 0.12 &\\
+  & = 0.58
+\end{flalign*}
+
+\subsection*{Example 1.9}
+The events A and B are independent and $P(A) = x$, $P(B) = x + 0.2$ and $P(A \cap B) = 0.15$. \\
+(a) Find the value of $x$. \\
+(b) $P(A \cup B)$ \\
+(c) $P(A' | B')$ \\[10pt]
+(a)
+\begin{flalign*}
+  P(A \cap B) & = P(A) \times P(B) &\\
+  0.15 & = x (x + 0.2) &\\
+  x^2 + 0.2x - 0.15 & = 0
+\end{flalign*}
+\begin{flalign*}
+  b^2 - 4ac & = 0.2^2 - 4 \times 1 \times (-0.15) &\\
+  & = 0.04 + 0.60 &\\
+  & = 0.64
+\end{flalign*}
+\begin{flalign*}
+  x_1 & = \dfrac{-b + \sqrt{b^2 - 4ac}}{2a} &\\
+  & = \dfrac{-0.2 + \sqrt{0.64}}{2 \times 1} &\\
+  & = \dfrac{-0.2 +  0.8}{2} &\\
+  & = \dfrac{0.6}{2} &\\
+  & = 0.3
+\end{flalign*}
+\begin{flalign*}
+  x_2 & = \dfrac{-b - \sqrt{b^2 - 4ac}}{2a} &\\
+  & = \dfrac{-0.2 - \sqrt{0.64}}{2 \times 1} &\\
+  & = \dfrac{-0.2 -  0.8}{2} &\\
+  & = \dfrac{-0.10}{2} &\\
+  & = -0.5 < 0 [Impossible]
+\end{flalign*}
+Hence, x = 0.3 \\
+(b)
+\begin{flalign*}
+  P(A \cup B) & = P(A) + P(B) - P(A \cap B) &\\
+  & = x + x + 0.2 - 0.15 &\\
+  & = 2 \times 0.3 + 0.2 - 0.15 &\\
+  & = 0.65
+\end{flalign*}
+(c) \\
+$P(A') = 1 - 0.3 = 0.7$ \\
+$P(B') = 1 - 0.5 = 0.5$ \\
+\begin{flalign*}
+  P(A' | B') & = P(A') - P(A' \cap B') &\\
+  & = 0.7 - P(A') \times P(B') &\\
+  & = 0.7 - 0.7 * 0.5 &\\
+  & = 0.7 - 0.35 &\\
+  & = 0.35
+\end{flalign*}
+
+\subsection*{Example 1.10}
+Three people in an office decide to enter a marathon race. The respective probabilities that they will complete the race are 0.9, 0.7 and 0.6. Assume that their performances are independent. Find the probability that \\
+(a) they all complete the race \\
+(b) none completes the race \\
+(c) at least one completes the race \\[20pt]
+$P(A) = 0.9$ \\
+$P(B) = 0.7$ \\
+$P(C) = 0.6$ \\
+(a)
+\begin{flalign*}
+  P(A \cap B \cap C) & = P(A) \times P(B) \times P(C) &\\
+  & = 0.9 \times 0.7 \times 0.6 &\\
+  & = 0.378
+\end{flalign*}
+(b)
+\begin{flalign*}
+  P(\overline{A \cup B \cup C}) & = P(\overline{A} \cap \overline{B} \cap \overline{C}) &\\
+  & = \{1 - P(A)\}\{1 - P(B)\}\{1 - P(C)\} &\\
+  & = (1 - 0.9)(1 - 0.7)(1 - 0.6) &\\
+  & = 0.1 \times 0.3 \times 0.4 &\\
+  & = 0.012
+\end{flalign*}
+(c)
+\begin{flalign*}
+  P(A \cup B \cup C) & = P(A) + P(B) + P(C) + P(A \cap B \cap C) - P(A \cap B) - P(B \cap C) - P(A \cap C) &\\
+  & = 0.9 + 0.7 + 0.6 + 0.378 - 0.9 \times 0.7 - 0.7 \times 0.6 - 0.9 \times 0.6 &\\
+  & = 2.578 - 0.63 - 0.42 - 0.54 &\\
+  & = 0.988
+\end{flalign*}
 \end{document}
